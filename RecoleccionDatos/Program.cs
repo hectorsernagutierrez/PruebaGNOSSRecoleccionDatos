@@ -6,8 +6,13 @@ public class Record
     public int Year { get; set; }
     public string ISOCode { get; set; }
     public string Countries { get; set; }
-    public double EconomicFreedomIndex { get; set; }    
+    public double EconomicFreedomIndex { get; set; }
     public int Rank { get; set; }
+    public int SizeOfGovernment { get; set; }
+    public double LegalSysPropertyRights { get; set; }
+    public double SoundMoney { get; set; }
+    public double FreedomTradeInternationally { get; set; }
+    public double Regulation { get; set; }
 
 }
 class Program
