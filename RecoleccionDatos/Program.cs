@@ -1,6 +1,5 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
-using CsvHelper.Configuration.Attributes;
 /*
  * Proyecto:Akademia Gnoss Formación
 * Author : Héctor Serna
@@ -10,12 +9,7 @@ using CsvHelper.Configuration.Attributes;
 * 
 */
 
-using CsvToolkit.Read;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.IO;
-using System.Linq;
 
 
 
@@ -45,9 +39,9 @@ public class RegistroPaisMap : ClassMap<RegistroPais>
         Map(m => m.EconomicFreedomIndex).Name("Economic Freedom Summary Index").Optional();
         Map(m => m.Rank).Name("Rank").Optional();
         Map(m => m.SizeOfGovernment).Name("Size of Government").Optional();
-        Map(m => m.LegalSysPropertyRights).Name("Legal System & Property Rights").Optional(); 
+        Map(m => m.LegalSysPropertyRights).Name("Legal System & Property Rights").Optional();
         Map(m => m.SoundMoney).Name("Sound Money").Optional();
-        Map(m => m.FreedomTradeInternationally).Name("Freedom to trade internationally").Optional(); 
+        Map(m => m.FreedomTradeInternationally).Name("Freedom to trade internationally").Optional();
         Map(m => m.Regulation).Name("Regulation").Optional();
     }
 }
@@ -66,7 +60,9 @@ class Program
         }
 
 
-        /*
+        /*+
+         *  ESTA ES LA FORMA DE HACERLO DIRECTAMENTE PARA LEER EL TEXTO, EVIDENTEMENTE LA CONSTRUCCIO HABRÍA QUE METERLA EN UN WHILE Y HACERLA MANUAL. 
+         
            // Notar que File.ReadLines(filePath).ToList().First() tiene las cabeceras del fichero y por tanto al printeralo por pantalla me sale las columnas del archivo.
 
 
@@ -83,7 +79,10 @@ class Program
             }
             Console.WriteLine(); // Nueva línea para separar registros
         }*/
-          
+
+
+        //HACERLO CON UN MAP ES MÁS ELEGANTE DEJA EL CÓDIGO MÁS FÁCIL DE MANTENER Y ESCALAR. 
+        //EN CASO DE QUE EL PROYECTO FUESE GRANDE PERMITIRIA DEJAR SEPARADOS LOS MAPAS Y HACER PATRONES DE UNA MANERA MÁS LEGIBLE 
 
 
         using (var reader = new StreamReader(filePath))// Usar variable en vez de la URI directamente nos otorga granularidad y hace que el código se mantega adecuadamente.
@@ -94,7 +93,7 @@ class Program
 
             var Paises = csv.GetRecords<RegistroPais>().ToList();//Dentro del lector cvs obtenemos las listas de registroPais , con las instancias ya creadas gracias al mapa.
 
-          //  Mostrar el contenido por consola con tabulaciones como delimitador
+            //  Mostrar el contenido por consola con tabulaciones como delimitador
             foreach (var pais in Paises)
             {
                 Console.WriteLine($"{pais.Countries}\t{pais.Year}\t{pais.Rank}"); // recordatorio el uso de $ permite meter variable de forma natural dentro del texto, queda más elegante
@@ -102,4 +101,3 @@ class Program
         }
     }
 }
-    
