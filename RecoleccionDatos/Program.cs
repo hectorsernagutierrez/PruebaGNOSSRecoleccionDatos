@@ -51,6 +51,7 @@ class Program
     {
         // Ruta del archivo CSV
         string filePath = "..\\..\\..\\economicdata2000-2021.csv";
+         
 
         // Verificar si el archivo existe
         if (!File.Exists(filePath))
