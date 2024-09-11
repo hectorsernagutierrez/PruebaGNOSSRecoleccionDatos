@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_program">Program</link>
+<para>Clase principal del programa que carga un archivo CSV y muestra en la consola la información de los países </para>
+<link linkend="_class_registro_pais">RegistroPais</link>
+<para>La clase <link linkend="_class_registro_pais">RegistroPais</link> contiene las propiedades que mapean los datos de un archivo CSV con información sobre índices de libertad económica de varios países </para>
+<link linkend="_class_registro_pais_map">RegistroPaisMap</link>
+<para>Clase que mapea las columnas del archivo CSV con las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link> </para>
+</section>

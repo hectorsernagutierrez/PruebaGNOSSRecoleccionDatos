@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RecoleccionDatos</name>
+    </assembly>
+    <members>
+        <member name="T:RegistroPais">
+            <summary>
+            La clase RegistroPais contiene las propiedades que mapean los datos de un archivo CSV 
+            con información sobre índices de libertad económica de varios países.
+            </summary>
+        </member>
+        <member name="P:RegistroPais.Year">
+            <summary>
+            Año de estudio
+            </summary>
+        </member>
+        <member name="P:RegistroPais.ISOCode">
+            <summary>
+            Código del país sigiuendo estandr ISO
+            </summary>
+        </member>
+        <member name="P:RegistroPais.Countries">
+            <summary>
+            País escrito al completo
+            </summary>
+        </member>
+        <member name="P:RegistroPais.EconomicFreedomIndex">
+            <summary>
+            indice de libertad econonómica
+            </summary>
+        </member>
+        <member name="P:RegistroPais.Rank">
+            <summary>
+            Ranking del país en el periodo de estudio
+            </summary>
+        </member>
+        <member name="P:RegistroPais.Quartile">
+            <summary>
+            Quartil que se esta estudiando
+            </summary>
+        </member>
+        <member name="P:RegistroPais.SizeOfGovernment">
+            <summary>
+            Tamaño del gobierno
+            </summary>
+        </member>
+        <member name="P:RegistroPais.LegalSysPropertyRights">
+            <summary>
+             Sistema legal y derechos de propiedad.
+            </summary>
+        </member>
+        <member name="P:RegistroPais.SoundMoney">
+            <summary>
+            Dinero en líquido. Salud económica
+            </summary>
+        </member>
+        <member name="P:RegistroPais.FreedomTradeInternationally">
+            <summary>
+            Libertad para comerciar internacionalmente
+            </summary>
+        </member>
+        <member name="P:RegistroPais.Regulation">
+            <summary>
+            Regulación gubernamental
+            </summary>
+        </member>
+        <member name="T:RegistroPaisMap">
+            <summary>
+            Clase que mapea las columnas del archivo CSV con las
+            propiedades de la clase RegistroPais.
+            </summary>
+        </member>
+        <member name="M:RegistroPaisMap.#ctor">
+            <summary>
+            Constructor que realiza el mapeo
+            entre las cabeceras del archivo CSV 
+            y las propiedades de la clase RegistroPais.
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Clase principal del programa que carga un archivo CSV
+            y muestra en la consola la información de los países.
+            </summary>
+        </member>
+        <member name="M:Program.Main">
+            <summary>
+            Método principal que se encarga
+            de leer el archivo CSV y mostrar los datos de los países en la consola.
+            </summary>
+        </member>
+    </members>
+</doc>

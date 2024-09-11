@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_registro_pais" xml:lang="en-US">
+<title>RegistroPais Class Reference</title>
+<indexterm><primary>RegistroPais</primary></indexterm>
+<para>
+
+<para>La clase <link linkend="_class_registro_pais">RegistroPais</link> contiene las propiedades que mapean los datos de un archivo CSV con información sobre índices de libertad económica de varios países. </para>
+ 
+</para>
+<simplesect>
+    <title>Properties    </title>
+        <itemizedlist>
+            <listitem><para>int? <link linkend="_class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1">Year</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Año de estudio. </para>
+</listitem>
+            <listitem><para>string <link linkend="_class_registro_pais_1a63133bfd6f60a688572771d25ca0391c">ISOCode</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Código del país sigiuendo estandr ISO. </para>
+</listitem>
+            <listitem><para>string? <link linkend="_class_registro_pais_1a531cf6679c34f6522834dd178bf78acd">Countries</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>País escrito al completo. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f">EconomicFreedomIndex</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>indice de libertad econonómica </para>
+</listitem>
+            <listitem><para>int? <link linkend="_class_registro_pais_1ad7e400617823a34f46e827922508261d">Rank</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Ranking del país en el periodo de estudio. </para>
+</listitem>
+            <listitem><para>int? <link linkend="_class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499">Quartile</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Quartil que se esta estudiando. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1">SizeOfGovernment</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Tamaño del gobierno. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41">LegalSysPropertyRights</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Sistema legal y derechos de propiedad. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f">SoundMoney</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Dinero en líquido. Salud económica. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45">FreedomTradeInternationally</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Libertad para comerciar internacionalmente. </para>
+</listitem>
+            <listitem><para>double? <link linkend="_class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45">Regulation</link><computeroutput> [get, set]</computeroutput>
+</para>
+
+<para>Regulación gubernamental. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_class_registro_pais">RegistroPais</link> contiene las propiedades que mapean los datos de un archivo CSV con información sobre índices de libertad económica de varios países. </para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00027">27</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<section>
+<title>Property Documentation</title>
+<anchor xml:id="_class_registro_pais_1a531cf6679c34f6522834dd178bf78acd"/><section>
+    <title>Countries</title>
+<indexterm><primary>Countries</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>Countries</secondary></indexterm>
+<para><computeroutput>string? RegistroPais.Countries<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>País escrito al completo. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00040">40</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f"/><section>
+    <title>EconomicFreedomIndex</title>
+<indexterm><primary>EconomicFreedomIndex</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>EconomicFreedomIndex</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.EconomicFreedomIndex<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>indice de libertad econonómica </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00044">44</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45"/><section>
+    <title>FreedomTradeInternationally</title>
+<indexterm><primary>FreedomTradeInternationally</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>FreedomTradeInternationally</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.FreedomTradeInternationally<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Libertad para comerciar internacionalmente. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00069">69</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a63133bfd6f60a688572771d25ca0391c"/><section>
+    <title>ISOCode</title>
+<indexterm><primary>ISOCode</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>ISOCode</secondary></indexterm>
+<para><computeroutput>string RegistroPais.ISOCode<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Código del país sigiuendo estandr ISO. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00036">36</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41"/><section>
+    <title>LegalSysPropertyRights</title>
+<indexterm><primary>LegalSysPropertyRights</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>LegalSysPropertyRights</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.LegalSysPropertyRights<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Sistema legal y derechos de propiedad. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00061">61</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499"/><section>
+    <title>Quartile</title>
+<indexterm><primary>Quartile</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>Quartile</secondary></indexterm>
+<para><computeroutput>int? RegistroPais.Quartile<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Quartil que se esta estudiando. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00052">52</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1ad7e400617823a34f46e827922508261d"/><section>
+    <title>Rank</title>
+<indexterm><primary>Rank</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>Rank</secondary></indexterm>
+<para><computeroutput>int? RegistroPais.Rank<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Ranking del país en el periodo de estudio. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00048">48</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45"/><section>
+    <title>Regulation</title>
+<indexterm><primary>Regulation</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>Regulation</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.Regulation<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Regulación gubernamental. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00073">73</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1"/><section>
+    <title>SizeOfGovernment</title>
+<indexterm><primary>SizeOfGovernment</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>SizeOfGovernment</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.SizeOfGovernment<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Tamaño del gobierno. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00057">57</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f"/><section>
+    <title>SoundMoney</title>
+<indexterm><primary>SoundMoney</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>SoundMoney</secondary></indexterm>
+<para><computeroutput>double? RegistroPais.SoundMoney<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Dinero en líquido. Salud económica. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00065">65</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<anchor xml:id="_class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1"/><section>
+    <title>Year</title>
+<indexterm><primary>Year</primary><secondary>RegistroPais</secondary></indexterm>
+<indexterm><primary>RegistroPais</primary><secondary>Year</secondary></indexterm>
+<para><computeroutput>int? RegistroPais.Year<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+
+<para>Año de estudio. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00032">32</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__program_8cs">Program.cs</link></section>
+</section>

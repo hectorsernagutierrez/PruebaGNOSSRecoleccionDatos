@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_registro_pais" kind="class" language="C#" prot="public">
+    <compoundname>RegistroPais</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? RegistroPais.Year</definition>
+        <argsstring></argsstring>
+        <name>Year</name>
+        <qualifiedname>RegistroPais.Year</qualifiedname>
+        <briefdescription>
+<para>Año de estudio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="32" column="16" bodyfile="Program.cs" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a63133bfd6f60a688572771d25ca0391c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string RegistroPais.ISOCode</definition>
+        <argsstring></argsstring>
+        <name>ISOCode</name>
+        <qualifiedname>RegistroPais.ISOCode</qualifiedname>
+        <briefdescription>
+<para>Código del país sigiuendo estandr ISO. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="36" column="19" bodyfile="Program.cs" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a531cf6679c34f6522834dd178bf78acd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? RegistroPais.Countries</definition>
+        <argsstring></argsstring>
+        <name>Countries</name>
+        <qualifiedname>RegistroPais.Countries</qualifiedname>
+        <briefdescription>
+<para>País escrito al completo. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="40" column="19" bodyfile="Program.cs" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.EconomicFreedomIndex</definition>
+        <argsstring></argsstring>
+        <name>EconomicFreedomIndex</name>
+        <qualifiedname>RegistroPais.EconomicFreedomIndex</qualifiedname>
+        <briefdescription>
+<para>indice de libertad econonómica </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="44" column="19" bodyfile="Program.cs" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1ad7e400617823a34f46e827922508261d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? RegistroPais.Rank</definition>
+        <argsstring></argsstring>
+        <name>Rank</name>
+        <qualifiedname>RegistroPais.Rank</qualifiedname>
+        <briefdescription>
+<para>Ranking del país en el periodo de estudio. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="48" column="16" bodyfile="Program.cs" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int?</type>
+        <definition>int? RegistroPais.Quartile</definition>
+        <argsstring></argsstring>
+        <name>Quartile</name>
+        <qualifiedname>RegistroPais.Quartile</qualifiedname>
+        <briefdescription>
+<para>Quartil que se esta estudiando. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="52" column="16" bodyfile="Program.cs" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.SizeOfGovernment</definition>
+        <argsstring></argsstring>
+        <name>SizeOfGovernment</name>
+        <qualifiedname>RegistroPais.SizeOfGovernment</qualifiedname>
+        <briefdescription>
+<para>Tamaño del gobierno. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="57" column="19" bodyfile="Program.cs" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.LegalSysPropertyRights</definition>
+        <argsstring></argsstring>
+        <name>LegalSysPropertyRights</name>
+        <qualifiedname>RegistroPais.LegalSysPropertyRights</qualifiedname>
+        <briefdescription>
+<para>Sistema legal y derechos de propiedad. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="61" column="19" bodyfile="Program.cs" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.SoundMoney</definition>
+        <argsstring></argsstring>
+        <name>SoundMoney</name>
+        <qualifiedname>RegistroPais.SoundMoney</qualifiedname>
+        <briefdescription>
+<para>Dinero en líquido. Salud económica. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="65" column="19" bodyfile="Program.cs" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.FreedomTradeInternationally</definition>
+        <argsstring></argsstring>
+        <name>FreedomTradeInternationally</name>
+        <qualifiedname>RegistroPais.FreedomTradeInternationally</qualifiedname>
+        <briefdescription>
+<para>Libertad para comerciar internacionalmente. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="69" column="19" bodyfile="Program.cs" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="property" id="class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double?</type>
+        <definition>double? RegistroPais.Regulation</definition>
+        <argsstring></argsstring>
+        <name>Regulation</name>
+        <qualifiedname>RegistroPais.Regulation</qualifiedname>
+        <briefdescription>
+<para>Regulación gubernamental. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="73" column="19" bodyfile="Program.cs" bodystart="73" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>La clase <ref refid="class_registro_pais" kindref="compound">RegistroPais</ref> contiene las propiedades que mapean los datos de un archivo CSV con información sobre índices de libertad económica de varios países. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Program.cs" line="27" column="7" bodyfile="Program.cs" bodystart="28" bodyend="75"/>
+    <listofallmembers>
+      <member refid="class_registro_pais_1a531cf6679c34f6522834dd178bf78acd" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>Countries</name></member>
+      <member refid="class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>EconomicFreedomIndex</name></member>
+      <member refid="class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>FreedomTradeInternationally</name></member>
+      <member refid="class_registro_pais_1a63133bfd6f60a688572771d25ca0391c" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>ISOCode</name></member>
+      <member refid="class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>LegalSysPropertyRights</name></member>
+      <member refid="class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>Quartile</name></member>
+      <member refid="class_registro_pais_1ad7e400617823a34f46e827922508261d" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>Rank</name></member>
+      <member refid="class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>Regulation</name></member>
+      <member refid="class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>SizeOfGovernment</name></member>
+      <member refid="class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>SoundMoney</name></member>
+      <member refid="class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1" prot="public" virt="non-virtual"><scope>RegistroPais</scope><name>Year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_registro_pais_map" xml:lang="en-US">
+<title>RegistroPaisMap Class Reference</title>
+<indexterm><primary>RegistroPaisMap</primary></indexterm>
+<para>
+
+<para>Clase que mapea las columnas del archivo CSV con las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link>. </para>
+ 
+</para>
+Inheritance diagram for RegistroPaisMap:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_registro_pais_map__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for RegistroPaisMap:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_registro_pais_map__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc">RegistroPaisMap</link> ()</para>
+
+<para>Constructor que realiza el mapeo entre las cabeceras del archivo CSV y las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Clase que mapea las columnas del archivo CSV con las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link>. </para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00082">82</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc"/><section>
+    <title>RegistroPaisMap()</title>
+<indexterm><primary>RegistroPaisMap</primary><secondary>RegistroPaisMap</secondary></indexterm>
+<indexterm><primary>RegistroPaisMap</primary><secondary>RegistroPaisMap</secondary></indexterm>
+<para><computeroutput>RegistroPaisMap.RegistroPaisMap ( )</computeroutput></para><para>
+
+<para>Constructor que realiza el mapeo entre las cabeceras del archivo CSV y las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link>. </para>
+</para>
+<para>
+Definition at line <link linkend="__program_8cs_source_1l00089">89</link> of file <link linkend="__program_8cs_source">Program.cs</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__program_8cs">Program.cs</link></section>
+</section>

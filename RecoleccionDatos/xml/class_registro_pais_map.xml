@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_registro_pais_map" kind="class" language="C#" prot="public">
+    <compoundname>RegistroPaisMap</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ClassMap&lt; RegistroPais &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RegistroPaisMap.RegistroPaisMap</definition>
+        <argsstring>()</argsstring>
+        <name>RegistroPaisMap</name>
+        <qualifiedname>RegistroPaisMap.RegistroPaisMap</qualifiedname>
+        <briefdescription>
+<para>Constructor que realiza el mapeo entre las cabeceras del archivo CSV y las propiedades de la clase <ref refid="class_registro_pais" kindref="compound">RegistroPais</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="89" column="12" bodyfile="Program.cs" bodystart="89" bodyend="102"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase que mapea las columnas del archivo CSV con las propiedades de la clase <ref refid="class_registro_pais" kindref="compound">RegistroPais</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ClassMap&lt; RegistroPais &gt;</label>
+      </node>
+      <node id="1">
+        <label>RegistroPaisMap</label>
+        <link refid="class_registro_pais_map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ClassMap&lt; RegistroPais &gt;</label>
+      </node>
+      <node id="1">
+        <label>RegistroPaisMap</label>
+        <link refid="class_registro_pais_map"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Program.cs" line="82" column="7" bodyfile="Program.cs" bodystart="83" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc" prot="public" virt="non-virtual"><scope>RegistroPaisMap</scope><name>RegistroPaisMap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

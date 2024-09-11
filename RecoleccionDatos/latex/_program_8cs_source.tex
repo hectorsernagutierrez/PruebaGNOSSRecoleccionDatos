@@ -1,0 +1,120 @@
+\doxysection{Program.\+cs}
+\label{_program_8cs_source}\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{keyword}{using\ }CsvHelper;}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ }CsvHelper.Configuration;}
+\DoxyCodeLine{00003\ \textcolor{keyword}{using\ }CsvToolkit.Read;}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{00005\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ }System.Globalization;}
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ }System.IO;}
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ Proyecto:Akademia\ Gnoss\ Formación}}
+\DoxyCodeLine{00013\ \textcolor{comment}{*\ Author\ :\ Héctor\ Serna}}
+\DoxyCodeLine{00014\ \textcolor{comment}{*\ Email\ :\ hectorserna@gnoss.com}}
+\DoxyCodeLine{00015\ \textcolor{comment}{*\ Fecha\ :\ 11/90/2024}}
+\DoxyCodeLine{00016\ \textcolor{comment}{*\ Version:1.0}}
+\DoxyCodeLine{00017\ \textcolor{comment}{*\ }}
+\DoxyCodeLine{00018\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }RegistroPais}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}?\ Year\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ ISOCode\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}?\ Countries\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ EconomicFreedomIndex\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}?\ Rank\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}?\ Quartile\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ SizeOfGovernment\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ LegalSysPropertyRights\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ SoundMoney\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ FreedomTradeInternationally\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{double}?\ Regulation\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{comment}{//Clase\ para\ mapear\ las\ columnas\ del\ CSV\ con\ las\ propiedades\ de\ RegistroPais}}
+\DoxyCodeLine{00082\ \textcolor{comment}{}\textcolor{keyword}{public}\ \textcolor{keyword}{class\ }RegistroPaisMap\ :\ ClassMap<RegistroPais>}
+\DoxyCodeLine{00083\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{public}\ RegistroPaisMap()}
+\DoxyCodeLine{00090\ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.Year).Name(\textcolor{stringliteral}{"{}Year"{}}).Optional();}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.ISOCode).Name(\textcolor{stringliteral}{"{}ISO\ Code"{}});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.Countries).Name(\textcolor{stringliteral}{"{}Countries"{}}).Optional();}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.EconomicFreedomIndex).Name(\textcolor{stringliteral}{"{}Economic\ Freedom\ Summary\ Index"{}}).Optional();}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.Rank).Name(\textcolor{stringliteral}{"{}Rank"{}}).Optional();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.Quartile).Name(\textcolor{stringliteral}{"{}Quartile"{}}).Optional();\ \ \ \ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.SizeOfGovernment).Name(\textcolor{stringliteral}{"{}Size\ of\ Government"{}}).Optional();}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.LegalSysPropertyRights).Name(\textcolor{stringliteral}{"{}Legal\ System\ \&\ Property\ Rights"{}}).Optional();}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.SoundMoney).Name(\textcolor{stringliteral}{"{}Sound\ Money"{}}).Optional();}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.FreedomTradeInternationally).Name(\textcolor{stringliteral}{"{}Freedom\ to\ trade\ internationally"{}}).Optional();}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ Map(m\ =>\ m.Regulation).Name(\textcolor{stringliteral}{"{}Regulation"{}}).Optional();}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00109\ \textcolor{keyword}{class\ }Program}
+\DoxyCodeLine{00110\ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Main()}
+\DoxyCodeLine{00116\ \ \ \ \ \{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ruta\ del\ archivo\ CSV}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ filePath\ =\ \textcolor{stringliteral}{"{}.\(\backslash\)\(\backslash\)..\(\backslash\)\(\backslash\)..\(\backslash\)\(\backslash\)..\(\backslash\)\(\backslash\)economicdata2000-\/2021.csv"{}};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Verificar\ si\ el\ archivo\ existe}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!File.Exists(filePath))}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\textcolor{stringliteral}{"{}El\ archivo\ no\ existe."{}});}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*+}}
+\DoxyCodeLine{00130\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ *\ \ ESTA\ ES\ LA\ FORMA\ DE\ HACERLO\ DIRECTAMENTE\ PARA\ LEER\ EL\ TEXTO,\ EVIDENTEMENTE\ LA\ CONSTRUCCIO\ HABRÍA\ QUE\ METERLA\ EN\ UN\ WHILE\ Y\ HACERLA\ MANUAL.\ }}
+\DoxyCodeLine{00131\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00132\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ //\ Notar\ que\ File.ReadLines(filePath).ToList().First()\ tiene\ las\ cabeceras\ del\ fichero\ y\ por\ tanto\ al\ printeralo\ por\ pantalla\ me\ sale\ las\ columnas\ del\ archivo.}}
+\DoxyCodeLine{00133\ \textcolor{comment}{}}
+\DoxyCodeLine{00134\ \textcolor{comment}{}}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ //\ Leer\ el\ archivo\ CSV\ línea\ por\ línea}}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ \ \ \ \ \ \ \ foreach\ (string\ line\ in\ File.ReadLines(filePath))\ }}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{00138\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ //\ Dividir\ la\ línea\ en\ campos\ usando\ la\ coma\ como\ delimitador}}
+\DoxyCodeLine{00139\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ string[]\ fields\ =\ line.Split(',');}}
+\DoxyCodeLine{00140\ \textcolor{comment}{}}
+\DoxyCodeLine{00141\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ //\ Procesar\ los\ campos\ (aquí\ simplemente\ los\ imprimimos)}}
+\DoxyCodeLine{00142\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ i\ =\ 0;\ i\ <\ fields.Length;\ i++)}}
+\DoxyCodeLine{00143\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$"{}Campo\ \{i\ +\ 1\}:\ \{fields[i]\}"{});}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine();\ //\ Nueva\ línea\ para\ separar\ registros}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}*/}}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//HACERLO\ CON\ UN\ MAP\ ES\ MÁS\ ELEGANTE\ DEJA\ EL\ CÓDIGO\ MÁS\ FÁCIL\ DE\ MANTENER\ Y\ ESCALAR.\ }}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{comment}{//EN\ CASO\ DE\ QUE\ EL\ PROYECTO\ FUESE\ GRANDE\ PERMITIRIA\ DEJAR\ SEPARADOS\ LOS\ MAPAS\ Y\ HACER\ PATRONES\ DE\ UNA\ MANERA\ MÁS\ LEGIBLE\ }}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ reader\ =\ \textcolor{keyword}{new}\ StreamReader(filePath))\textcolor{comment}{//\ Usar\ variable\ en\ vez\ de\ la\ URI\ directamente\ nos\ otorga\ granularidad\ y\ hace\ que\ el\ código\ se\ mantega\ adecuadamente.}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using}\ (var\ csv\ =\ \textcolor{keyword}{new}\ CsvReader(reader,\ CultureInfo.InvariantCulture))}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ csv.Context.RegisterClassMap<RegistroPaisMap>();\textcolor{comment}{//\ El\ contexto\ sirve\ para\ añadir\ el\ \ mapa\ adecuadamente\ de\ las\ cabeceras\ del\ CSV\ con\ \ los\ atributos\ de\ la\ clase\ en\ cuestion.\ Util\ cuando\ las\ cabeceras\ son\ de\ varias\ palabras.}}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ var\ Paises\ =\ csv.GetRecords<RegistroPais>().ToList();\textcolor{comment}{//Dentro\ del\ lector\ cvs\ obtenemos\ las\ listas\ de\ registroPais\ ,\ con\ las\ instancias\ ya\ creadas\ gracias\ al\ mapa.}}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ \ Mostrar\ el\ contenido\ por\ consola\ con\ tabulaciones\ como\ delimitador}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ pais\ \textcolor{keywordflow}{in}\ Paises)}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(\$\textcolor{stringliteral}{"{}Pais:\{pais.Countries\}\(\backslash\)t\ Año:\{pais.Year\}\(\backslash\)t\ \ Rank:\{pais.Rank\}"{}});\ \textcolor{comment}{//\ recordatorio\ el\ uso\ de\ \$\ permite\ meter\ variable\ de\ forma\ natural\ dentro\ del\ texto,\ queda\ más\ elegante}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00168\ \ \ \ \ \}}
+\DoxyCodeLine{00169\ \}}
+
+\end{DoxyCode}

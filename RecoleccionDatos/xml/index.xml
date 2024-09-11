@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="class_program" kind="class"><name>Program</name>
+    <member refid="class_program_1ad22b0f776312e09174fc36a1e4bade60" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_registro_pais" kind="class"><name>RegistroPais</name>
+    <member refid="class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1" kind="property"><name>Year</name></member>
+    <member refid="class_registro_pais_1a63133bfd6f60a688572771d25ca0391c" kind="property"><name>ISOCode</name></member>
+    <member refid="class_registro_pais_1a531cf6679c34f6522834dd178bf78acd" kind="property"><name>Countries</name></member>
+    <member refid="class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f" kind="property"><name>EconomicFreedomIndex</name></member>
+    <member refid="class_registro_pais_1ad7e400617823a34f46e827922508261d" kind="property"><name>Rank</name></member>
+    <member refid="class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499" kind="property"><name>Quartile</name></member>
+    <member refid="class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1" kind="property"><name>SizeOfGovernment</name></member>
+    <member refid="class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41" kind="property"><name>LegalSysPropertyRights</name></member>
+    <member refid="class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f" kind="property"><name>SoundMoney</name></member>
+    <member refid="class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45" kind="property"><name>FreedomTradeInternationally</name></member>
+    <member refid="class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45" kind="property"><name>Regulation</name></member>
+  </compound>
+  <compound refid="class_registro_pais_map" kind="class"><name>RegistroPaisMap</name>
+    <member refid="class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc" kind="function"><name>RegistroPaisMap</name></member>
+  </compound>
+  <compound refid="namespace_csv_helper" kind="namespace"><name>CsvHelper</name>
+  </compound>
+  <compound refid="namespace_csv_helper_1_1_configuration" kind="namespace"><name>CsvHelper::Configuration</name>
+  </compound>
+  <compound refid="namespace_csv_toolkit_1_1_read" kind="namespace"><name>CsvToolkit::Read</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system" kind="namespace"><name>global::System</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_collections_1_1_generic" kind="namespace"><name>global::System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_i_o" kind="namespace"><name>global::System::IO</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_linq" kind="namespace"><name>global::System::Linq</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_net_1_1_http" kind="namespace"><name>global::System::Net::Http</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading" kind="namespace"><name>global::System::Threading</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_1_1_threading_1_1_tasks" kind="namespace"><name>global::System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_globalization" kind="namespace"><name>System::Globalization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="_debug_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2net6_80_2_8_n_e_t_core_app_00_version_0av6_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v6.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_debug_2net6_80_2_recoleccion_datos_8_assembly_info_8cs" kind="file"><name>RecoleccionDatos.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2net6_80_2_recoleccion_datos_8_assembly_info_8cs" kind="file"><name>RecoleccionDatos.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2net6_80_2_recoleccion_datos_8_global_usings_8g_8cs" kind="file"><name>RecoleccionDatos.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_release_2net6_80_2_recoleccion_datos_8_global_usings_8g_8cs" kind="file"><name>RecoleccionDatos.GlobalUsings.g.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_7212c827820ef56532d3599ed27e3aff" kind="dir"><name>obj/Debug/net6.0</name>
+  </compound>
+  <compound refid="dir_5bc0522bdcced5c53981ba02ce0a34ba" kind="dir"><name>obj/Release/net6.0</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir"><name>obj/Release</name>
+  </compound>
+</doxygenindex>

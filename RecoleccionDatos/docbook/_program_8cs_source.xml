@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__program_8cs_source" xml:lang="en-US">
+<title>Program.cs</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__program_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>CsvHelper;
+<anchor xml:id="__program_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>CsvHelper.Configuration;
+<anchor xml:id="__program_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>CsvToolkit.Read;
+<anchor xml:id="__program_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__program_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__program_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>System.Globalization;
+<anchor xml:id="__program_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>System.IO;
+<anchor xml:id="__program_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__program_8cs_source_1l00009"/>00009 
+<anchor xml:id="__program_8cs_source_1l00010"/>00010 
+<anchor xml:id="__program_8cs_source_1l00011"/>00011 <emphasis role="comment">/*</emphasis>
+<anchor xml:id="__program_8cs_source_1l00012"/>00012 <emphasis role="comment">&#32;*&#32;Proyecto:Akademia&#32;Gnoss&#32;Formación</emphasis>
+<anchor xml:id="__program_8cs_source_1l00013"/>00013 <emphasis role="comment">*&#32;Author&#32;:&#32;Héctor&#32;Serna</emphasis>
+<anchor xml:id="__program_8cs_source_1l00014"/>00014 <emphasis role="comment">*&#32;Email&#32;:&#32;hectorserna@gnoss.com</emphasis>
+<anchor xml:id="__program_8cs_source_1l00015"/>00015 <emphasis role="comment">*&#32;Fecha&#32;:&#32;11/90/2024</emphasis>
+<anchor xml:id="__program_8cs_source_1l00016"/>00016 <emphasis role="comment">*&#32;Version:1.0</emphasis>
+<anchor xml:id="__program_8cs_source_1l00017"/>00017 <emphasis role="comment">*&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00018"/>00018 <emphasis role="comment">*/</emphasis>
+<anchor xml:id="__program_8cs_source_1l00019"/>00019 
+<anchor xml:id="__program_8cs_source_1l00020"/>00020 
+<anchor xml:id="__program_8cs_source_1l00021"/>00021 
+<anchor xml:id="__program_8cs_source_1l00026"/>00026 
+<anchor xml:id="__program_8cs_source_1l00027"/><link linkend="_class_registro_pais">00027</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_registro_pais">RegistroPais</link>
+<anchor xml:id="__program_8cs_source_1l00028"/>00028 {
+<anchor xml:id="__program_8cs_source_1l00032"/><link linkend="_class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1">00032</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>?&#32;<link linkend="_class_registro_pais_1a5b0d3623b59cebc30a162d2597563bc1">Year</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00036"/><link linkend="_class_registro_pais_1a63133bfd6f60a688572771d25ca0391c">00036</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_registro_pais_1a63133bfd6f60a688572771d25ca0391c">ISOCode</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00040"/><link linkend="_class_registro_pais_1a531cf6679c34f6522834dd178bf78acd">00040</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>?&#32;<link linkend="_class_registro_pais_1a531cf6679c34f6522834dd178bf78acd">Countries</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00044"/><link linkend="_class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f">00044</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1a2ac6601761dcf9fda2d12b57a643108f">EconomicFreedomIndex</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00048"/><link linkend="_class_registro_pais_1ad7e400617823a34f46e827922508261d">00048</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>?&#32;<link linkend="_class_registro_pais_1ad7e400617823a34f46e827922508261d">Rank</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00052"/><link linkend="_class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499">00052</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>?&#32;<link linkend="_class_registro_pais_1a12f93bdd54ed826f0ef61fb411383499">Quartile</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00056"/>00056 
+<anchor xml:id="__program_8cs_source_1l00057"/><link linkend="_class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1">00057</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1a34f55abe2bafd90a465957a6b0f530f1">SizeOfGovernment</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00061"/><link linkend="_class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41">00061</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1a7f42eb2ea8695bdd3d0249fcf042ee41">LegalSysPropertyRights</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00065"/><link linkend="_class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f">00065</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1aba98f5ebddb327ba35033b335a47d66f">SoundMoney</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00069"/><link linkend="_class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45">00069</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1ab9f60f32f0b6ff1af58e1bdb8f8a9a45">FreedomTradeInternationally</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00073"/><link linkend="_class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45">00073</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>?&#32;<link linkend="_class_registro_pais_1ae0cd650d783f0afe29733e32f4858c45">Regulation</link>&#32;{&#32;<emphasis role="keyword">get</emphasis>;&#32;<emphasis role="keyword">set</emphasis>;&#32;}
+<anchor xml:id="__program_8cs_source_1l00074"/>00074 
+<anchor xml:id="__program_8cs_source_1l00075"/>00075 }
+<anchor xml:id="__program_8cs_source_1l00076"/>00076 
+<anchor xml:id="__program_8cs_source_1l00077"/>00077 <emphasis role="comment">//Clase&#32;para&#32;mapear&#32;las&#32;columnas&#32;del&#32;CSV&#32;con&#32;las&#32;propiedades&#32;de&#32;RegistroPais</emphasis>
+<anchor xml:id="__program_8cs_source_1l00082"/><link linkend="_class_registro_pais_map">00082</link> <emphasis role="comment"></emphasis><emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_registro_pais_map">RegistroPaisMap</link>&#32;:&#32;ClassMap&lt;RegistroPais&gt;
+<anchor xml:id="__program_8cs_source_1l00083"/>00083 {
+<anchor xml:id="__program_8cs_source_1l00089"/><link linkend="_class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc">00089</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_registro_pais_map_1a82aab2f38b5e256b32598a082166aafc">RegistroPaisMap</link>()
+<anchor xml:id="__program_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.Year).Name(<emphasis role="stringliteral">&quot;Year&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.ISOCode).Name(<emphasis role="stringliteral">&quot;ISO&#32;Code&quot;</emphasis>);
+<anchor xml:id="__program_8cs_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.Countries).Name(<emphasis role="stringliteral">&quot;Countries&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.EconomicFreedomIndex).Name(<emphasis role="stringliteral">&quot;Economic&#32;Freedom&#32;Summary&#32;Index&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.Rank).Name(<emphasis role="stringliteral">&quot;Rank&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.Quartile).Name(<emphasis role="stringliteral">&quot;Quartile&quot;</emphasis>).Optional();&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__program_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.SizeOfGovernment).Name(<emphasis role="stringliteral">&quot;Size&#32;of&#32;Government&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00098"/>00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.LegalSysPropertyRights).Name(<emphasis role="stringliteral">&quot;Legal&#32;System&#32;&amp;&#32;Property&#32;Rights&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.SoundMoney).Name(<emphasis role="stringliteral">&quot;Sound&#32;Money&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.FreedomTradeInternationally).Name(<emphasis role="stringliteral">&quot;Freedom&#32;to&#32;trade&#32;internationally&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map(m&#32;=&gt;&#32;m.Regulation).Name(<emphasis role="stringliteral">&quot;Regulation&quot;</emphasis>).Optional();
+<anchor xml:id="__program_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00103"/>00103 }
+<anchor xml:id="__program_8cs_source_1l00104"/>00104 
+<anchor xml:id="__program_8cs_source_1l00109"/><link linkend="_class_program">00109</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_program">Program</link>
+<anchor xml:id="__program_8cs_source_1l00110"/>00110 {
+<anchor xml:id="__program_8cs_source_1l00115"/>00115 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;Main()
+<anchor xml:id="__program_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Ruta&#32;del&#32;archivo&#32;CSV</emphasis>
+<anchor xml:id="__program_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;filePath&#32;=&#32;<emphasis role="stringliteral">&quot;.\\..\\..\\..\\economicdata2000-2021.csv&quot;</emphasis>;
+<anchor xml:id="__program_8cs_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__program_8cs_source_1l00120"/>00120 
+<anchor xml:id="__program_8cs_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Verificar&#32;si&#32;el&#32;archivo&#32;existe</emphasis>
+<anchor xml:id="__program_8cs_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!File.Exists(filePath))
+<anchor xml:id="__program_8cs_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00124"/>00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Console.WriteLine(<emphasis role="stringliteral">&quot;El&#32;archivo&#32;no&#32;existe.&quot;</emphasis>);
+<anchor xml:id="__program_8cs_source_1l00125"/>00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>;
+<anchor xml:id="__program_8cs_source_1l00126"/>00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00127"/>00127 
+<anchor xml:id="__program_8cs_source_1l00128"/>00128 
+<anchor xml:id="__program_8cs_source_1l00129"/>00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*+</emphasis>
+<anchor xml:id="__program_8cs_source_1l00130"/>00130 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;&#32;ESTA&#32;ES&#32;LA&#32;FORMA&#32;DE&#32;HACERLO&#32;DIRECTAMENTE&#32;PARA&#32;LEER&#32;EL&#32;TEXTO,&#32;EVIDENTEMENTE&#32;LA&#32;CONSTRUCCIO&#32;HABRÍA&#32;QUE&#32;METERLA&#32;EN&#32;UN&#32;WHILE&#32;Y&#32;HACERLA&#32;MANUAL.&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00131"/>00131 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00132"/>00132 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Notar&#32;que&#32;File.ReadLines(filePath).ToList().First()&#32;tiene&#32;las&#32;cabeceras&#32;del&#32;fichero&#32;y&#32;por&#32;tanto&#32;al&#32;printeralo&#32;por&#32;pantalla&#32;me&#32;sale&#32;las&#32;columnas&#32;del&#32;archivo.</emphasis>
+<anchor xml:id="__program_8cs_source_1l00133"/>00133 <emphasis role="comment"></emphasis>
+<anchor xml:id="__program_8cs_source_1l00134"/>00134 <emphasis role="comment"></emphasis>
+<anchor xml:id="__program_8cs_source_1l00135"/>00135 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Leer&#32;el&#32;archivo&#32;CSV&#32;línea&#32;por&#32;línea</emphasis>
+<anchor xml:id="__program_8cs_source_1l00136"/>00136 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;foreach&#32;(string&#32;line&#32;in&#32;File.ReadLines(filePath))&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00137"/>00137 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+<anchor xml:id="__program_8cs_source_1l00138"/>00138 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Dividir&#32;la&#32;línea&#32;en&#32;campos&#32;usando&#32;la&#32;coma&#32;como&#32;delimitador</emphasis>
+<anchor xml:id="__program_8cs_source_1l00139"/>00139 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;string[]&#32;fields&#32;=&#32;line.Split(&apos;,&apos;);</emphasis>
+<anchor xml:id="__program_8cs_source_1l00140"/>00140 <emphasis role="comment"></emphasis>
+<anchor xml:id="__program_8cs_source_1l00141"/>00141 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//&#32;Procesar&#32;los&#32;campos&#32;(aquí&#32;simplemente&#32;los&#32;imprimimos)</emphasis>
+<anchor xml:id="__program_8cs_source_1l00142"/>00142 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;fields.Length;&#32;i++)</emphasis>
+<anchor xml:id="__program_8cs_source_1l00143"/>00143 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{</emphasis>
+<anchor xml:id="__program_8cs_source_1l00144"/>00144 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Console.WriteLine($&quot;Campo&#32;{i&#32;+&#32;1}:&#32;{fields[i]}&quot;);</emphasis>
+<anchor xml:id="__program_8cs_source_1l00145"/>00145 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+<anchor xml:id="__program_8cs_source_1l00146"/>00146 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Console.WriteLine();&#32;//&#32;Nueva&#32;línea&#32;para&#32;separar&#32;registros</emphasis>
+<anchor xml:id="__program_8cs_source_1l00147"/>00147 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}*/</emphasis>
+<anchor xml:id="__program_8cs_source_1l00148"/>00148 
+<anchor xml:id="__program_8cs_source_1l00149"/>00149 
+<anchor xml:id="__program_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//HACERLO&#32;CON&#32;UN&#32;MAP&#32;ES&#32;MÁS&#32;ELEGANTE&#32;DEJA&#32;EL&#32;CÓDIGO&#32;MÁS&#32;FÁCIL&#32;DE&#32;MANTENER&#32;Y&#32;ESCALAR.&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//EN&#32;CASO&#32;DE&#32;QUE&#32;EL&#32;PROYECTO&#32;FUESE&#32;GRANDE&#32;PERMITIRIA&#32;DEJAR&#32;SEPARADOS&#32;LOS&#32;MAPAS&#32;Y&#32;HACER&#32;PATRONES&#32;DE&#32;UNA&#32;MANERA&#32;MÁS&#32;LEGIBLE&#32;</emphasis>
+<anchor xml:id="__program_8cs_source_1l00152"/>00152 
+<anchor xml:id="__program_8cs_source_1l00153"/>00153 
+<anchor xml:id="__program_8cs_source_1l00154"/>00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">using</emphasis>&#32;(var&#32;reader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;StreamReader(filePath))<emphasis role="comment">//&#32;Usar&#32;variable&#32;en&#32;vez&#32;de&#32;la&#32;URI&#32;directamente&#32;nos&#32;otorga&#32;granularidad&#32;y&#32;hace&#32;que&#32;el&#32;código&#32;se&#32;mantega&#32;adecuadamente.</emphasis>
+<anchor xml:id="__program_8cs_source_1l00155"/>00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">using</emphasis>&#32;(var&#32;csv&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;CsvReader(reader,&#32;CultureInfo.InvariantCulture))
+<anchor xml:id="__program_8cs_source_1l00156"/>00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00157"/>00157 
+<anchor xml:id="__program_8cs_source_1l00158"/>00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;csv.Context.RegisterClassMap&lt;<link linkend="_class_registro_pais_map">RegistroPaisMap</link>&gt;();<emphasis role="comment">//&#32;El&#32;contexto&#32;sirve&#32;para&#32;añadir&#32;el&#32;&#32;mapa&#32;adecuadamente&#32;de&#32;las&#32;cabeceras&#32;del&#32;CSV&#32;con&#32;&#32;los&#32;atributos&#32;de&#32;la&#32;clase&#32;en&#32;cuestion.&#32;Util&#32;cuando&#32;las&#32;cabeceras&#32;son&#32;de&#32;varias&#32;palabras.</emphasis>
+<anchor xml:id="__program_8cs_source_1l00159"/>00159 
+<anchor xml:id="__program_8cs_source_1l00160"/>00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;Paises&#32;=&#32;csv.GetRecords&lt;<link linkend="_class_registro_pais">RegistroPais</link>&gt;().ToList();<emphasis role="comment">//Dentro&#32;del&#32;lector&#32;cvs&#32;obtenemos&#32;las&#32;listas&#32;de&#32;registroPais&#32;,&#32;con&#32;las&#32;instancias&#32;ya&#32;creadas&#32;gracias&#32;al&#32;mapa.</emphasis>
+<anchor xml:id="__program_8cs_source_1l00161"/>00161 
+<anchor xml:id="__program_8cs_source_1l00162"/>00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;&#32;Mostrar&#32;el&#32;contenido&#32;por&#32;consola&#32;con&#32;tabulaciones&#32;como&#32;delimitador</emphasis>
+<anchor xml:id="__program_8cs_source_1l00163"/>00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;pais&#32;<emphasis role="keywordflow">in</emphasis>&#32;Paises)
+<anchor xml:id="__program_8cs_source_1l00164"/>00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__program_8cs_source_1l00165"/>00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Console.WriteLine($<emphasis role="stringliteral">&quot;Pais:{pais.Countries}\t&#32;Año:{pais.Year}\t&#32;&#32;Rank:{pais.Rank}&quot;</emphasis>);&#32;<emphasis role="comment">//&#32;recordatorio&#32;el&#32;uso&#32;de&#32;$&#32;permite&#32;meter&#32;variable&#32;de&#32;forma&#32;natural&#32;dentro&#32;del&#32;texto,&#32;queda&#32;más&#32;elegante</emphasis>
+<anchor xml:id="__program_8cs_source_1l00166"/>00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00167"/>00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00168"/>00168 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__program_8cs_source_1l00169"/>00169 }
+</programlisting></section>

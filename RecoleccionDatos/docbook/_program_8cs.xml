@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__program_8cs" xml:lang="en-US">
+<title>Program.cs File Reference</title>
+<indexterm><primary>Program.cs</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_registro_pais">RegistroPais</link></para>
+
+<para>La clase <link linkend="_class_registro_pais">RegistroPais</link> contiene las propiedades que mapean los datos de un archivo CSV con información sobre índices de libertad económica de varios países. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_registro_pais_map">RegistroPaisMap</link></para>
+
+<para>Clase que mapea las columnas del archivo CSV con las propiedades de la clase <link linkend="_class_registro_pais">RegistroPais</link>. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_program">Program</link></para>
+
+<para>Clase principal del programa que carga un archivo CSV y muestra en la consola la información de los países. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

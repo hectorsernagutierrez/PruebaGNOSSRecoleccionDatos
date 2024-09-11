@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_9fe5cc214b8578ee5b8e153089aca810" xml:lang="en-US">
+<title>obj/Release Directory Reference</title>
+<indexterm><primary>obj/Release Directory Reference</primary></indexterm>
+Directory dependency graph for Release:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_9fe5cc214b8578ee5b8e153089aca810_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_5bc0522bdcced5c53981ba02ce0a34ba">net6.0</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

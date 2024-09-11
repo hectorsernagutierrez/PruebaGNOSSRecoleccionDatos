@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="class_program" kind="class" language="C#" prot="public">
+    <compoundname>Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_program_1ad22b0f776312e09174fc36a1e4bade60" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Program.Main</qualifiedname>
+        <briefdescription>
+<para>Método principal que se encarga de leer el archivo CSV y mostrar los datos de los países en la consola. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="115" column="17" bodyfile="Program.cs" bodystart="115" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Clase principal del programa que carga un archivo CSV y muestra en la consola la información de los países. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Program.cs" line="109" column="1" bodyfile="Program.cs" bodystart="110" bodyend="169"/>
+    <listofallmembers>
+      <member refid="class_program_1ad22b0f776312e09174fc36a1e4bade60" prot="private" virt="non-virtual"><scope>Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
