@@ -1,36 +1,91 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
+using CsvToolkit.Read;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+
+
 /*
  * Proyecto:Akademia Gnoss Formación
 * Author : Héctor Serna
 * Email : hectorserna@gnoss.com
 * Fecha : 11/90/2024
-* Version:1.0
-* 
+* Version:1.0 .
+* Documentacion: /RecoleccionDatos/bin/Debug/net6.0/html/index.html
 */
 
-using System.Globalization;
 
 
+/// <summary>
+/// La clase RegistroPais contiene las propiedades que mapean los datos de un archivo CSV 
+/// con información sobre índices de libertad económica de varios países.
+/// </summary>
 
 public class RegistroPais
 {
+    /// <summary>
+    /// Año de estudio
+    /// </summary>
     public int? Year { get; set; }
+    /// <summary>
+    /// Código del país sigiuendo estandr ISO
+    /// </summary>
     public string ISOCode { get; set; }
+    /// <summary>
+    /// País escrito al completo
+    /// </summary>
     public string? Countries { get; set; }
+    /// <summary>
+    /// indice de libertad econonómica
+    /// </summary>
     public double? EconomicFreedomIndex { get; set; }
+    /// <summary>
+    /// Ranking del país en el periodo de estudio
+    /// </summary>
     public int? Rank { get; set; }
+    /// <summary>
+    /// Quartil que se esta estudiando
+    /// </summary>
+    public int? Quartile { get; set; }
+    /// <summary>
+    /// Tamaño del gobierno
+    /// </summary>
+
     public double? SizeOfGovernment { get; set; }
+    /// <summary>
+    ///  Sistema legal y derechos de propiedad.
+    /// </summary>
     public double? LegalSysPropertyRights { get; set; }
+    /// <summary>
+    /// Dinero en líquido. Salud económica
+    /// </summary>
     public double? SoundMoney { get; set; }
+    /// <summary>
+    /// Libertad para comerciar internacionalmente
+    /// </summary>
     public double? FreedomTradeInternationally { get; set; }
+    /// <summary>
+    /// Regulación gubernamental
+    /// </summary>
     public double? Regulation { get; set; }
 
 }
 
 //Clase para mapear las columnas del CSV con las propiedades de RegistroPais
+/// <summary>
+/// Clase que mapea las columnas del archivo CSV con las
+/// propiedades de la clase RegistroPais.
+/// </summary>
 public class RegistroPaisMap : ClassMap<RegistroPais>
 {
+    /// <summary>
+    /// Constructor que realiza el mapeo
+    /// entre las cabeceras del archivo CSV 
+    /// y las propiedades de la clase RegistroPais.
+    /// </summary>
     public RegistroPaisMap()
     {
         Map(m => m.Year).Name("Year").Optional();
@@ -38,6 +93,7 @@ public class RegistroPaisMap : ClassMap<RegistroPais>
         Map(m => m.Countries).Name("Countries").Optional();
         Map(m => m.EconomicFreedomIndex).Name("Economic Freedom Summary Index").Optional();
         Map(m => m.Rank).Name("Rank").Optional();
+        Map(m => m.Quartile).Name("Quartile").Optional();       
         Map(m => m.SizeOfGovernment).Name("Size of Government").Optional();
         Map(m => m.LegalSysPropertyRights).Name("Legal System & Property Rights").Optional();
         Map(m => m.SoundMoney).Name("Sound Money").Optional();
@@ -45,8 +101,17 @@ public class RegistroPaisMap : ClassMap<RegistroPais>
         Map(m => m.Regulation).Name("Regulation").Optional();
     }
 }
+
+/// <summary>
+/// Clase principal del programa que carga un archivo CSV
+/// y muestra en la consola la información de los países.
+/// </summary>
 class Program
 {
+    /// <summary>
+    /// Método principal que se encarga
+    /// de leer el archivo CSV y mostrar los datos de los países en la consola.
+    /// </summary>
     static void Main()
     {
         // Ruta del archivo CSV
@@ -97,7 +162,7 @@ class Program
             //  Mostrar el contenido por consola con tabulaciones como delimitador
             foreach (var pais in Paises)
             {
-                Console.WriteLine($"{pais.Countries}\t{pais.Year}\t{pais.Rank}"); // recordatorio el uso de $ permite meter variable de forma natural dentro del texto, queda más elegante
+                Console.WriteLine($"Pais:{pais.Countries}\t Año:{pais.Year}\t  Rank:{pais.Rank}"); // recordatorio el uso de $ permite meter variable de forma natural dentro del texto, queda más elegante
             }
         }
     }
