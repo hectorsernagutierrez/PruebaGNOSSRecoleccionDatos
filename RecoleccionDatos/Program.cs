@@ -50,7 +50,7 @@ class Program
     static void Main()
     {
         // Ruta del archivo CSV
-        string filePath = "..\\..\\..\\economicdata2000-2021.csv";
+        string filePath = ".\\..\\..\\..\\economicdata2000-2021.csv";
          
 
         // Verificar si el archivo existe
